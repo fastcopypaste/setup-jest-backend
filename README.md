@@ -126,10 +126,67 @@ Explain for some options:
 `coverageThreshold`: coverage threshold for your project, modify it as  you need
 
 ## Additional information
+1. Coverage
 
 You can ignore coverage for line or function using this:
 ```
 /* istanbul ignore next: I dont want to cover this line */
+```
+
+2. Eslint
+
+Maybe you will encounter Eslint problems in Visual Code or you want to add Eslint For Jest. Let run this command:
+
+```
+yarn add --dev eslint-plugin-jest
+```
+Add the plugin to your `.eslintrc` configuration file.
+
+```
+{
+  "plugins": ["jest"]
+}
+```
+And we can whitelist the environment variable
+
+```
+{
+  "env": {
+    "jest/globals": true
+  }
+}
+```
+
+Maybe Your `eslintrc` is look like this:
+```
+{
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "root": true,
+  "plugins": [
+    "babel",
+    "jest"
+  ],
+  "env": {
+    "node": true,
+    "mocha": true,
+    "jest/globals": true
+  },
+  "rules": {
+    "babel/generator-star-spacing": 1,
+    "func-names": 0,
+    "generator-star-spacing": 0,
+    "id-length": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [ "**/*.test.js" ]
+      }
+    ],
+    "import/prefer-default-export": 0,
+    "require-jsdoc": 2
+  }
+}
 ```
 
 ### Happy testing with Jest
