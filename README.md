@@ -125,4 +125,11 @@ Explain for some options:
 
 `coverageThreshold`: coverage threshold for your project, modify it as  you need
 
+## Additional information
+
+You can ignore coverage for line or function using this:
+```
+/* istanbul ignore next: I dont want to cover this line */
+```
+
 ### Happy testing with Jest
