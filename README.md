@@ -112,11 +112,17 @@ Full configuration  can be found here: https://jestjs.io/docs/en/configuration
 Explain for some options:
 
 `collectCoverageFrom`: Here is all files that we need collect coverage report, we can use `!` to exclude files or folders we do not want to collect coverage from them.
+
 `collectCoverage`: Show coverage report
+
 `coverageDirectory`: Folder that you wan to see Jest's report
+
 `coverageReporters`: Type of coverage report
+
 `testMatch`: Pattern your test files, modify it if you need
+
 `verbose`: `true` if you want to see every test cases or `false` if you do not want to see them, default is `false`
+
 `coverageThreshold`: coverage threshold for your project, modify it as  you need
 
 ### Happy testing with Jest
