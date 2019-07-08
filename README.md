@@ -77,9 +77,19 @@ For running in CI/CD:
 
 ## Step 3:
 Make a config file for Jest using the command:
+
+If you are using yarn
+
 ```
-jest --init
+yarn jest --init
 ```
+
+If you are not using yarn
+
+```
+node_modules/.bin/jest --init
+```
+
 You can see a lot of things, just read it or you can use my config, it is good enough for every project:
 
 ```
