@@ -23,7 +23,7 @@ yarn create jest-babel-tdd your-app-name --babel
 
 For more detail please visit: https://github.com/fastcopypaste/create-jest-babel-tdd
 
-#### For existed project
+#### For existing project
 
 ```
 yarn add --dev babel-jest @babel/core @babel/preset-env
